@@ -1,0 +1,400 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2EB7F7F45CDEC7F8512B0999 /* libPods-FabricOOMDetection.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B1F4A78BEE0C5769C23DC15 /* libPods-FabricOOMDetection.a */; };
+		55F58DBA164838D4008566AE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55F58DB9164838D4008566AE /* UIKit.framework */; };
+		55F58DBC164838D4008566AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55F58DBB164838D4008566AE /* Foundation.framework */; };
+		55F58DBE164838D4008566AE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55F58DBD164838D4008566AE /* CoreGraphics.framework */; };
+		95DC33BA1E2647E400351393 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 95DC33AD1E2647E400351393 /* AppDelegate.m */; };
+		95DC33BB1E2647E400351393 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 95DC33AE1E2647E400351393 /* Default-568h@2x.png */; };
+		95DC33BC1E2647E400351393 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 95DC33AF1E2647E400351393 /* Default.png */; };
+		95DC33BD1E2647E400351393 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 95DC33B01E2647E400351393 /* Default@2x.png */; };
+		95DC33BE1E2647E400351393 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 95DC33B11E2647E400351393 /* InfoPlist.strings */; };
+		95DC33BF1E2647E400351393 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95DC33B31E2647E400351393 /* MainStoryboard.storyboard */; };
+		95DC33C01E2647E400351393 /* FabricOOMDetection-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 95DC33B51E2647E400351393 /* FabricOOMDetection-Info.plist */; };
+		95DC33C11E2647E400351393 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 95DC33B71E2647E400351393 /* main.m */; };
+		95DC33C21E2647E400351393 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95DC33B91E2647E400351393 /* ViewController.m */; };
+		95DC33C51E264A4000351393 /* Analytics.m in Sources */ = {isa = PBXBuildFile; fileRef = 95DC33C41E264A4000351393 /* Analytics.m */; };
+		95DC33C81E26711D00351393 /* ReadWriteUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 95DC33C71E26711D00351393 /* ReadWriteUtil.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3D4A2E98A4E21182AED80B17 /* Pods-FabricOOMDetection.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FabricOOMDetection.release.xcconfig"; path = "Pods/Target Support Files/Pods-FabricOOMDetection/Pods-FabricOOMDetection.release.xcconfig"; sourceTree = "<group>"; };
+		55F58DB5164838D4008566AE /* FabricOOMDetection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FabricOOMDetection.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		55F58DB9164838D4008566AE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		55F58DBB164838D4008566AE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		55F58DBD164838D4008566AE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7B1F4A78BEE0C5769C23DC15 /* libPods-FabricOOMDetection.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FabricOOMDetection.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		95DC33AC1E2647E400351393 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		95DC33AD1E2647E400351393 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		95DC33AE1E2647E400351393 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		95DC33AF1E2647E400351393 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		95DC33B01E2647E400351393 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		95DC33B21E2647E400351393 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		95DC33B41E2647E400351393 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		95DC33B51E2647E400351393 /* FabricOOMDetection-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "FabricOOMDetection-Info.plist"; sourceTree = "<group>"; };
+		95DC33B61E2647E400351393 /* FabricOOMDetection-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FabricOOMDetection-Prefix.pch"; sourceTree = "<group>"; };
+		95DC33B71E2647E400351393 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		95DC33B81E2647E400351393 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		95DC33B91E2647E400351393 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		95DC33C31E264A4000351393 /* Analytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Analytics.h; sourceTree = "<group>"; };
+		95DC33C41E264A4000351393 /* Analytics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Analytics.m; sourceTree = "<group>"; };
+		95DC33C61E26711D00351393 /* ReadWriteUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadWriteUtil.h; sourceTree = "<group>"; };
+		95DC33C71E26711D00351393 /* ReadWriteUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadWriteUtil.m; sourceTree = "<group>"; };
+		AFA0BB2D5493BFB89A66C55A /* Pods-FabricOOMDetection.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FabricOOMDetection.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FabricOOMDetection/Pods-FabricOOMDetection.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		55F58DB2164838D4008566AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55F58DBA164838D4008566AE /* UIKit.framework in Frameworks */,
+				55F58DBC164838D4008566AE /* Foundation.framework in Frameworks */,
+				55F58DBE164838D4008566AE /* CoreGraphics.framework in Frameworks */,
+				2EB7F7F45CDEC7F8512B0999 /* libPods-FabricOOMDetection.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		55F58DAA164838D4008566AE = {
+			isa = PBXGroup;
+			children = (
+				95DC33AB1E2647E400351393 /* FabricOOMDetection */,
+				55F58DB8164838D4008566AE /* Frameworks */,
+				55F58DB6164838D4008566AE /* Products */,
+				F373BC90ED51F1BFCD4E262E /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		55F58DB6164838D4008566AE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				55F58DB5164838D4008566AE /* FabricOOMDetection.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		55F58DB8164838D4008566AE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				55F58DB9164838D4008566AE /* UIKit.framework */,
+				55F58DBB164838D4008566AE /* Foundation.framework */,
+				55F58DBD164838D4008566AE /* CoreGraphics.framework */,
+				7B1F4A78BEE0C5769C23DC15 /* libPods-FabricOOMDetection.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		95DC33AB1E2647E400351393 /* FabricOOMDetection */ = {
+			isa = PBXGroup;
+			children = (
+				95DC33C61E26711D00351393 /* ReadWriteUtil.h */,
+				95DC33C71E26711D00351393 /* ReadWriteUtil.m */,
+				95DC33C31E264A4000351393 /* Analytics.h */,
+				95DC33C41E264A4000351393 /* Analytics.m */,
+				95DC33AC1E2647E400351393 /* AppDelegate.h */,
+				95DC33AD1E2647E400351393 /* AppDelegate.m */,
+				95DC33AE1E2647E400351393 /* Default-568h@2x.png */,
+				95DC33AF1E2647E400351393 /* Default.png */,
+				95DC33B01E2647E400351393 /* Default@2x.png */,
+				95DC33B11E2647E400351393 /* InfoPlist.strings */,
+				95DC33B31E2647E400351393 /* MainStoryboard.storyboard */,
+				95DC33B51E2647E400351393 /* FabricOOMDetection-Info.plist */,
+				95DC33B61E2647E400351393 /* FabricOOMDetection-Prefix.pch */,
+				95DC33B71E2647E400351393 /* main.m */,
+				95DC33B81E2647E400351393 /* ViewController.h */,
+				95DC33B91E2647E400351393 /* ViewController.m */,
+			);
+			path = FabricOOMDetection;
+			sourceTree = "<group>";
+		};
+		F373BC90ED51F1BFCD4E262E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AFA0BB2D5493BFB89A66C55A /* Pods-FabricOOMDetection.debug.xcconfig */,
+				3D4A2E98A4E21182AED80B17 /* Pods-FabricOOMDetection.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		55F58DB4164838D4008566AE /* FabricOOMDetection */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55F58DDC164838D5008566AE /* Build configuration list for PBXNativeTarget "FabricOOMDetection" */;
+			buildPhases = (
+				8E6952FA3F2CA2A8A3C81F7E /* [CP] Check Pods Manifest.lock */,
+				55F58DB1164838D4008566AE /* Sources */,
+				55F58DB2164838D4008566AE /* Frameworks */,
+				55F58DB3164838D4008566AE /* Resources */,
+				5DB264D386C801DB677A2DAD /* [CP] Embed Pods Frameworks */,
+				E1FEA0F9A78C038A052D3A52 /* [CP] Copy Pods Resources */,
+				95C112F61E26A19C00AF29AD /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FabricOOMDetection;
+			productName = MemoryTest;
+			productReference = 55F58DB5164838D4008566AE /* FabricOOMDetection.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		55F58DAC164838D4008566AE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Jan Ilavsky";
+				TargetAttributes = {
+					55F58DB4164838D4008566AE = {
+						DevelopmentTeam = Q4YJ6QQ5V3;
+					};
+				};
+			};
+			buildConfigurationList = 55F58DAF164838D4008566AE /* Build configuration list for PBXProject "FabricOOMDetection" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 55F58DAA164838D4008566AE;
+			productRefGroup = 55F58DB6164838D4008566AE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				55F58DB4164838D4008566AE /* FabricOOMDetection */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		55F58DB3164838D4008566AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95DC33BD1E2647E400351393 /* Default@2x.png in Resources */,
+				95DC33BF1E2647E400351393 /* MainStoryboard.storyboard in Resources */,
+				95DC33BE1E2647E400351393 /* InfoPlist.strings in Resources */,
+				95DC33C01E2647E400351393 /* FabricOOMDetection-Info.plist in Resources */,
+				95DC33BB1E2647E400351393 /* Default-568h@2x.png in Resources */,
+				95DC33BC1E2647E400351393 /* Default.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5DB264D386C801DB677A2DAD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FabricOOMDetection/Pods-FabricOOMDetection-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E6952FA3F2CA2A8A3C81F7E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		95C112F61E26A19C00AF29AD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 1bd939cb64710cced397e77af04bccf90da398d3 3cfa1725dc7c2b18831d8e206fcd975f14ad75e90b08e679206e55f07e636ec3";
+		};
+		E1FEA0F9A78C038A052D3A52 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FabricOOMDetection/Pods-FabricOOMDetection-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		55F58DB1164838D4008566AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95DC33C21E2647E400351393 /* ViewController.m in Sources */,
+				95DC33C11E2647E400351393 /* main.m in Sources */,
+				95DC33C51E264A4000351393 /* Analytics.m in Sources */,
+				95DC33C81E26711D00351393 /* ReadWriteUtil.m in Sources */,
+				95DC33BA1E2647E400351393 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		95DC33B11E2647E400351393 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95DC33B21E2647E400351393 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		95DC33B31E2647E400351393 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95DC33B41E2647E400351393 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		55F58DDA164838D5008566AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		55F58DDB164838D5008566AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		55F58DDD164838D5008566AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFA0BB2D5493BFB89A66C55A /* Pods-FabricOOMDetection.debug.xcconfig */;
+			buildSettings = {
+				DEVELOPMENT_TEAM = Q4YJ6QQ5V3;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FabricOOMDetection/FabricOOMDetection-Prefix.pch";
+				INFOPLIST_FILE = "FabricOOMDetection/FabricOOMDetection-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = Prakhar11074.FabricOOM;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		55F58DDE164838D5008566AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D4A2E98A4E21182AED80B17 /* Pods-FabricOOMDetection.release.xcconfig */;
+			buildSettings = {
+				DEVELOPMENT_TEAM = Q4YJ6QQ5V3;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FabricOOMDetection/FabricOOMDetection-Prefix.pch";
+				INFOPLIST_FILE = "FabricOOMDetection/FabricOOMDetection-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = Prakhar11074.FabricOOM;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		55F58DAF164838D4008566AE /* Build configuration list for PBXProject "FabricOOMDetection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55F58DDA164838D5008566AE /* Debug */,
+				55F58DDB164838D5008566AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55F58DDC164838D5008566AE /* Build configuration list for PBXNativeTarget "FabricOOMDetection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55F58DDD164838D5008566AE /* Debug */,
+				55F58DDE164838D5008566AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 55F58DAC164838D4008566AE /* Project object */;
+}
