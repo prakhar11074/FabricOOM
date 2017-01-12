@@ -24,11 +24,18 @@ static NSDate *lastForegroundDate;
 static NSDate *firstLaunchDate;
 static int numberOfForegrounds;
 
-vm_size_t usedMemory(void) {
+vm_size_t usedResidentMemory(void) {
     struct task_basic_info info;
     mach_msg_type_number_t size = sizeof(info);
     kern_return_t kerr = task_info(mach_task_self(), TASK_BASIC_INFO, (task_info_t)&info, &size);
     return (kerr == KERN_SUCCESS) ? info.resident_size : 0; // size in bytes
+}
+
+vm_size_t usedVirtualMemory(void) {
+    struct task_basic_info info;
+    mach_msg_type_number_t size = sizeof(info);
+    kern_return_t kerr = task_info(mach_task_self(), TASK_BASIC_INFO, (task_info_t)&info, &size);
+    return (kerr == KERN_SUCCESS) ? info.virtual_size : 0; // size in bytes
 }
 
 vm_size_t freeMemory(void) {
@@ -115,7 +122,8 @@ float cpu_usage()
 {
     NSMutableDictionary *customData = [[NSMutableDictionary alloc] init];
     
-    [customData setValue:[NSNumber numberWithFloat: usedMemory()/1024.0f] forKey:@"currentMemory"];
+    [customData setValue:[NSNumber numberWithFloat: usedResidentMemory()/1024.0f] forKey:@"currentResidentMemory"];
+    [customData setValue:[NSNumber numberWithFloat: usedVirtualMemory()/1024.0f] forKey:@"currentVirtualMemory"];
     [customData setValue:[NSNumber numberWithFloat:freeMemory()/1024.0f] forKey:@"freeMemory"];
     [customData setValue:[NSNumber numberWithFloat:cpu_usage()] forKey:@"cpuUsage"];
     [customData setValue:[NSNumber numberWithDouble:[[NSDate date] timeIntervalSinceDate:firstLaunchDate]/3600.0f] forKey:@"hoursSinceLaunch"];
@@ -125,7 +133,7 @@ float cpu_usage()
     
     [ReadWriteUtil cacheOnDisk:customData usingKey:OOM_DATA_KEY];
     [ReadWriteUtil cacheOnDisk:[Analytics OSVersion] usingKey:OOM_OS_VER_KEY];
-    [ReadWriteUtil cacheOnDisk:[Analytics AppVersionIs] usingKey:OOM_APP_VER_KEY];
+    [ReadWriteUtil cacheOnDisk:[Analytics AppVersion] usingKey:OOM_APP_VER_KEY];
     
     [Answers logCustomEventWithName:@"OutOfMemoryWarning" customAttributes:customData];
     NSError *err = [[NSError alloc] initWithDomain:@"OutOfMemoryWarning" code:666 userInfo:customData];
@@ -182,7 +190,7 @@ float cpu_usage()
     [ReadWriteUtil cacheOnDisk:[NSNumber numberWithBool:YES] usingKey:APP_IN_BACKGROUND_KEY];
 }
 
-+ (NSString *)AppVersionIs
++ (NSString *)AppVersion
 {
     return [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"];
 }
